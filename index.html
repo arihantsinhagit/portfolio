@@ -219,25 +219,35 @@
               <div class="progress"><span style="width:0%"></span></div>
             </div>
 
-            <div class="skill" data-percent="92">
-              <div class="label"><span>CSS</span><span>92%</span></div>
+            <div class="skill" data-percent="93">
+              <div class="label"><span>CSS</span><span>93%</span></div>
               <div class="progress"><span style="width:0%"></span></div>
             </div>
 
-            <div class="skill" data-percent="88">
-              <div class="label"><span>JavaScript</span><span>88%</span></div>
+            <div class="skill" data-percent="91">
+              <div class="label"><span>JavaScript</span><span>91%</span></div>
               <div class="progress"><span style="width:0%"></span></div>
             </div>
+            </div>
+              <div class="skill" data-percent="87">
+              <div class="label"><span>SQL</span><span> 87%</span></div>
+              <div class="progress"><span style="width:0%"></span></div>
+            </div>            
+
+              <div class="skill" data-percent="83">
+              <div class="label"><span>PHP</span><span>83%</span></div>
+              <div class="progress"><span style="width:0%"></span></div>
 
             <div class="skill" data-percent="75">
               <div class="label"><span>React</span><span>75%</span></div>
               <div class="progress"><span style="width:0%"></span></div>
             </div>
 
+
           </div>
         </div>
 
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="work">
+        <img src="image2.png" alt="work">
       </div>
     </div>
   </section>
@@ -261,7 +271,7 @@
             </div>
             <div class="project-actions">
               <button class="pill" onclick="openProjectModal(this)">Details</button>
-              <a class="pill" href="#" onclick="event.preventDefault();" title="Live demo">Live Demo</a>
+              <a class="pill" href="#" onclick="event.preventDefault();" title="This webpage">This Webpage</a>
             </div>
           </div>
         </div>
@@ -317,7 +327,7 @@
   <section id="professional">
     <div class="container">
       <h2 class="section-title">Professional Projects</h2>
-      <p class="lead">Client & Truelancer work (you can replace these with real client projects)</p>
+      <p class="lead">Client & Truelancer work </p>
 
       <div class="project-grid" data-aos="fade-up">
         <!-- Example professional project card with modal details -->
@@ -355,23 +365,30 @@
       <div class="packages" data-aos="fade-up">
         <div class="package">
           <h4>Basic</h4>
-          <p class="price">$50 <small>/project</small></p>
-          <p>Small landing page, responsive design, 1 revision.</p>
+          <p class="price">₹150 <small>/project</small></p>
+          <p>Frontend only: HTML, CSS — small landing page or single-page site. 1 revision.</p>
           <div style="margin-top:12px"><button class="btn glow" onclick="location.href='#contact'">Select</button></div>
         </div>
 
         <div class="package">
           <h4>Standard</h4>
-          <p class="price">$150</p>
-          <p>Multi-page site, contact form, 2 revisions.</p>
+          <p class="price">₹300</p>
+          <p>Frontend webpages: HTML, CSS, JS — multi-page sites, contact form, 2 revisions.</p>
           <div style="margin-top:12px"><button class="btn glow" onclick="location.href='#contact'">Select</button></div>
         </div>
 
         <div class="package">
-          <h4>Premium</h4>
-          <p class="price">$350</p>
-          <p>Full frontend + API integration, 5 revisions, deployment help.</p>
-          <div style="margin-top:12px"><button class="btn glow" onclick="location.href='#contact'">Select</button></div>
+          <h4>Intermediate (Full‑Stack)</h4>
+          <p class="price">₹1,000 — ₹2,000 <small>(depends on project)</small></p>
+          <p>Full‑stack: HTML, CSS, JS, PHP, SQL, phpMyAdmin, database connection and backend integration. Pricing depends on complexity and features.</p>
+          <div style="margin-top:12px"><button class="btn glow" onclick="location.href='#contact'">Request Quote</button></div>
+        </div>
+
+        <div class="package">
+          <h4>Premium (Full‑Stack, Big Project)</h4>
+          <p class="price">₹2,000 — ₹5,000</p>
+          <p>Large full‑stack projects: HTML, CSS, JS, PHP, SQL, phpMyAdmin, database connect, deployment and extended support.</p>
+          <div style="margin-top:12px"><button class="btn glow" onclick="location.href='#contact'">Request Quote</button></div>
         </div>
       </div>
 
@@ -381,7 +398,7 @@
   <!-- MINI DASHBOARD (Optional Bonus) -->
   <section id="dashboard">
     <div class="container">
-      <h2 class="section-title">Mini Dashboard (Demo)</h2>
+      <h2 class="section-title">Mini Dashboard</h2>
       <p class="lead">Mock overview for clients to see activity.</p>
       <div style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center;">
         <div class="package" style="min-width:160px; text-align:center;">
@@ -393,7 +410,7 @@
           <div>Completed Projects</div>
         </div>
         <div class="package" style="min-width:160px; text-align:center;">
-          <h3 id="earnings">$4,200</h3>
+          <h3 id="earnings">₹2,500</h3>
           <div>Earnings (Demo)</div>
         </div>
       </div>
@@ -579,7 +596,7 @@
     document.querySelectorAll('.project-card').forEach(pc=>{ pc.setAttribute('tabindex','0'); pc.addEventListener('keydown',(e)=>{ if(e.key==='Enter'){ const btn = pc.querySelector('.pill'); if(btn) btn.click(); } }); });
 
     /* ----------------- Tiny analytics / mock updates (dashboard) ----------------- */
-    (function(){ document.getElementById('ongoing').textContent = 3; document.getElementById('completed').textContent = 28; document.getElementById('earnings').textContent = '$4,200'; })();
+    (function(){ document.getElementById('ongoing').textContent = 3; document.getElementById('completed').textContent = 28; document.getElementById('earnings').textContent = '₹2,500'; })();
 
     // AOS library script load
   </script>
